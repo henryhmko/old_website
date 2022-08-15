@@ -20,11 +20,30 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-    </nav> 
+    </nav>
+
+    <!-- <div class="container">
+        <div class="img_part">
+            <img src="me_img.png" width="150px" height="150px" style="float: right">
+        </div>
+        <div class="message">
+            <span id="light_text" style="color:#919191">Hello, I'm </span>
+            <span id="heavy_text" style="color:#0FA4C0">Henry Ko</span>
+            <span id="light_text" style="color:#919191">,<br>a student at </span>
+            <span id="heavy_text" style="color:#0FA4C0">UC Berkeley </span>
+            <span id="light_text" style="color:#919191">studying<br></span>
+            <span id="heavy_text" style="color:#0FA4C0">Computer Science </span>
+            <span id="light_text" style="color:#919191">& </span>
+            <span id="heavy_text" style="color:#0FA4C0">Applied Math</span>
+            <span id="light_text" style="color:#919191"><br><br>   As an ocean enthusiast and avid learner,<br></span>
+            <span id="heavy_text" style="color:#0FA4C0">I wish to use machine learning to expand<br>the frontiers of marine science</span>
+        </div>
+    </div> -->
 
     <div class="message">
         <span id="light_text" style="color:#919191">Hello, I'm </span>
         <span id="heavy_text" style="color:#0FA4C0">Henry Ko</span>
+        <img src="me_img.png" width="340px" height="340px" id="my_img" align="bottom">
         <span id="light_text" style="color:#919191">,<br>a student at </span>
         <span id="heavy_text" style="color:#0FA4C0">UC Berkeley </span>
         <span id="light_text" style="color:#919191">studying<br></span>
@@ -36,6 +55,17 @@
     </div>
 
 </section>
+
+<!-- disable particles on mobile devices -->
+<script>
+    if (window.screen.width > 1021){
+        document.write(
+            '<div id="particles-js"></div>'+
+            '<script type="text/javascript" src="particles.js"><\/script>'+
+            '<script type="text/javascript" src="app.js"><\/script>'
+        )
+    }
+</script>
 
 </body>
 </html>
