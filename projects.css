@@ -13,7 +13,16 @@ body{
     background-position: center;
     background-size: cover;
     position: relative;
+    z-index: 1;
 }
+#particles-js{
+    background: #FFFFFF;
+    /* background-position: center; */
+}
+/* .particles-js-canvas-el {
+    height: 500px !important;
+    z-index: 0;
+    } */
 
 /* align title and tabs */
 nav{
@@ -81,6 +90,11 @@ nav{
     font-size: 34.2px;
 }
 
+/* DeepSeaNN results image properties */
+#my_img{
+    float: right;
+    margin: -90px 150px -50px 15px;
+}
 
 
 /* correcting view for mobile devices */
@@ -108,6 +122,11 @@ nav{
         color: #0FA4C0;
         text-decoration: none;
         font-size: 20px;
+    }
+
+    /* hacking width of hover bar for mobile */
+    .nav-links ul li:hover::after{
+        width: 0%;
     }
 }
 
@@ -140,5 +159,10 @@ nav{
         color: #0FA4C0;
         text-decoration: none;
         font-size: 25px;
+    }
+
+    /* hacking width of hover bar for tablet */
+    .nav-links ul li:hover::after{
+        width: 0%;
     }
 }

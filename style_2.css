@@ -24,6 +24,9 @@ body{
     background-size: cover;
     position: relative;
 }
+#particles-js{
+    background: #FFFFFF;
+}
 
 
 
@@ -121,6 +124,11 @@ nav{
         text-decoration: none;
         font-size: 20px;
     }
+
+    /* hacking width of hover bar for mobile */
+    .nav-links ul li:hover::after{
+        width: 0%;
+    }
 }
 
 /* correcting view for tablet devices */
@@ -145,6 +153,11 @@ nav{
         color: #0FA4C0;
         text-decoration: none;
         font-size: 25px;
+    }
+
+    /* hacking width of hover bar for tablet */
+    .nav-links ul li:hover::after{
+        width: 0%;
     }
 }
 

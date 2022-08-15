@@ -15,6 +15,9 @@ body{
     background-size: cover;
     position: relative;
 }
+#particles-js{
+    background: #FFFFFF;
+}
 
 /* align title and tabs */
 nav{
@@ -76,6 +79,11 @@ nav{
     text-align: left;
 }
 
+#my_img{
+    float: right;
+    margin: 0px 230px 30px 15px;
+}
+
 /* texts in black properties */
 #light_text{
     font-size: 36px;
@@ -85,6 +93,54 @@ nav{
 #heavy_text{
     font-size: 40.5px;
 }
+
+/* #hp{
+    float: right;
+    margin: 0px 230px 30px 15px;
+} */
+
+/* .container{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+img{
+    max-width: 100%;
+}
+.img_part{
+    flex-basis: 15%;
+} */
+
+/* nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items:center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+} */
+/* .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 2% 6%; */
+/* .img_part{
+    flex-basis: 50%;
+    text-align: bottom;
+    margin: 0 0px 0 0 ;
+}
+img{
+    margin: 0 300px 0 0 ;
+} */
+/* .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 60%;
+    align-items: center;
+} */
 
 
 
@@ -114,18 +170,29 @@ nav{
         text-decoration: none;
         font-size: 20px;
     }
+
+    /* hacking width of hover bar for mobile */
+    .nav-links ul li:hover::after{
+        width: 0%;
+    }
+
+    /* hacking img placement for mobile */
+    /* please don't rotate your device...or contact me if you can teach me html :'(' */
+    #my_img{
+        width: 130px;
+        height: 130px;
+        float: none;
+        margin: -100px 0px 50px -60px;
+    }
 }
 
-/* correcting view for tablet devices */
-@media(min-width: 551px) and (max-width: 1020px){
+/* correcting view for tablet devices 1020*/
+@media(min-width: 551px) and (max-width: 1180px){
     /* adjust title font size  */
     .title a{
         font-size: 70px; 
     }
-    /* adjust message font size */
-    /* .message{
-        font-size: 28.5px;
-    } */
+    
     #light_text{
         font-size: 30px;
     }
@@ -145,5 +212,18 @@ nav{
         text-decoration: none;
         font-size: 25px;
     }
-}
 
+    /* hacking width of hover bar for tablet */
+    .nav-links ul li:hover::after{
+        width: 0%;
+    }
+
+    /* hacking img placement for tablet */
+    /* please don't rotate your device...or contact me if you can teach me html :'(' */
+    #my_img{
+        width: 300px;
+        height: 300px;
+        float: none;
+        margin: 0px 0px 100px -80px;
+    }
+}
