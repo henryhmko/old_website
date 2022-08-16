@@ -45,14 +45,11 @@ nav{
 
 
 /* decorations for title(Henry Ko) */
-/* .title{
-    font-family: 'Pretendard';
-    font-weight: 200;
-} */
 .title a{
     color: #0FA4C0;
     text-decoration:none;
     font-size: 100px;
+
 }
 /* decorations for tab links */
 .nav-links ul li{

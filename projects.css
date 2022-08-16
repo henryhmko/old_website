@@ -108,10 +108,13 @@ nav{
     }
     
     #light_text{
-        font-size: 13.8px;
+        font-size: 10.8px;
+    }
+    #light_text_long{
+        font-size: 9.6px;
     }
     #heavy_text{
-        font-size: 18px;
+        font-size: 13.68px;
     }
 
     /* decorations for tab links */
@@ -130,6 +133,41 @@ nav{
     /* hacking width of hover bar for mobile */
     .nav-links ul li:hover::after{
         width: 0%;
+    }   
+
+    /* hacking img placement for mobile */
+    /* please don't rotate your device...or contact me if you can teach me html :'(' */
+    #my_img{
+        /* width: 130px;
+        height: 209.3px;
+        float: none;
+        margin: 0px 0px 100px 100px; */
+        width: 100px;
+        height: 161px;
+        float: top;
+        margin: -200px 120px 0px -130px;
+    }
+    /* message properties...i.e. centering message */
+.message{
+    width: 90%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+}
+
+/* correcting view for galaxy fold z devices..terrible coding scheme really.. */
+@media(max-width: 281px){
+    #light_text_long{
+        font-size: 7.5px;
+    }
+    #light_text{
+        font-size: 9.3px;
+    }
+    #my_img{
+        margin: -220px 90px 0px -130px;
     }
 }
 
@@ -141,11 +179,12 @@ nav{
         font-size: 70px; 
     }
     /* adjust message font size */
-    /* .message{
-        font-size: 28.5px;
-    } */
+    
     #light_text{
-        font-size: 28px;
+        font-size: 20px;
+    }
+    #light_text_long{
+        font-size: 17.78px;
     }
     #heavy_text{
         font-size: 32.5px;
@@ -168,4 +207,22 @@ nav{
     .nav-links ul li:hover::after{
         width: 0%;
     }
+
+    /* hacking img placement for mobile */
+    /* please don't rotate your device...or contact me if you can teach me html :'(' */
+    #my_img{
+        width: 250px;
+        height: 402.5px;
+        float: top;
+        margin: -500px 180px 0px -130px;
+    }
+    /* message properties...i.e. centering message */
+.message{
+    width: 90%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: left;
+}
 }
