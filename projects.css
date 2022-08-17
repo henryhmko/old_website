@@ -150,7 +150,7 @@ nav{
 }
 }
 
-/* correcting view for galaxy fold z devices..terrible coding scheme really.. */
+/* correcting view for galaxy fold z devices..terrible coding scheme really... */
 @media(max-width: 281px){
     #light_text_long{
         font-size: 7.5px;
