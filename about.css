@@ -134,7 +134,7 @@ nav{
     }
 }
 
-/* correcting view for tablet devices 1020*/
+/* correcting view for tablet devices 1020 or 1180px*/
 @media(min-width: 551px) and (max-width: 1180px){
     /* adjust title font size  */
     .title a{
