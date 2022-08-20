@@ -138,8 +138,10 @@ nav{
     #my_img{
         width: 100px;
         height: 161px;
-        float: top;
-        margin: -200px 120px 0px -130px;
+        position: absolute;
+        top: 10%;
+        left: 40%;
+        transform: translate(-50%, -50%);
     }
     /* message properties...i.e. centering message */
 .message{
