@@ -130,7 +130,11 @@ nav{
         width: 130px;
         height: 130px;
         float: none;
-        margin: -100px 0px 50px -60px;
+        margin: -100px 0px 30px -60px;
+    }
+    
+    .message{
+        top: 56%;
     }
 }
 
